@@ -1,0 +1,79 @@
+<html lang="en-US"><head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="manifest" href="manifest.json">
+		<link rel="preconnect" href="https://www.gstatic.com">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-touch-fullscreen" content="yes">
+		<meta name="apple-mobile-web-app-title" content="FlowOS">
+		<link rel="apple-touch-icon" href="/assets/flow-logo.png">
+		<meta name="apple-touch-startup-image" content="/assets/logo.svg">
+
+		<meta name="theme-color" content="#000000">
+		<meta name="description" content="The customizable webOS.">
+
+		<link rel="icon" href="/assets/logo.svg">
+		<link rel="favicon" href="/assets/logo.svg">
+
+		<title>FlowOS</title>
+
+		<link rel="stylesheet" href="/styles/style.css">
+		<link rel="stylesheet" href="/styles/desktop.css">
+
+		<link rel="modulepreload" href="index.js">
+	<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3RNYBG5J74"></script><script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+  		gtag('js', new Date());
+
+  		gtag('config', 'G-3RNYBG5J74');
+	</script><script src="https://www.googletagmanager.com/gtag/js?l=dataLayer&amp;id=G-3RNYBG5J74" async=""></script><style flow-style="true"></style><link rel="stylesheet" type="text/css" href="/builtin/themes/catppuccin-macchiato.css"></head>
+
+	
+	
+
+	<body>
+		<div class="boot" style="opacity: 0; pointer-events: none;">
+			<main>
+				<img src="/assets/logo.svg" width="100px" height="100px" class="logo" alt="Flow Works Logo">
+
+				<div class="progress-bar" style="margin-top: 20px">
+					<div class="progress-bar-value"></div>
+				</div>
+			</main>
+		</div>
+
+		<div class="statusbar">
+			<div class="left"></div>
+			<div class="middle"></div>
+			<div class="right"></div>
+		</div>
+
+		<div class="spotlight">
+			<input class="searchbar" placeholder="Search apps...">
+			<ul class="apps"></ul>
+		</div>
+
+		<div class="container"><div id="winbox-1" class="winbox no-close no-move no-min no-full no-resize focus" style="z-index: 11; width: 1028px; height: 650px; left: 514px; top: 233px;"><div class="wb-header"><div class="wb-control"><span class="wb-min"></span><span class="wb-max"></span><span class="wb-full"></span><span class="wb-close"></span></div><div class="wb-drag"><div class="wb-icon" style="background-image: url(&quot;/assets/icons/application.svg&quot;); display: inline-block;"></div><div class="wb-title">Setup Wizard</div></div></div><div class="wb-body"><iframe src="/builtin/apps/setup.html"></iframe></div><div class="wb-n"></div><div class="wb-s"></div><div class="wb-w"></div><div class="wb-e"></div><div class="wb-nw"></div><div class="wb-ne"></div><div class="wb-se"></div><div class="wb-sw"></div></div></div>
+
+		<div class="taskbar">
+			<div onclick="Flow.spotlight.toggle();" style="aspect-ratio: 1 / 1;">
+				<div style="font-family: 'Agave Nerd Font';margin: 5px 10px 5px 5px;color: var(--desktop-bg);font-size: 20px;">󱇚</div>
+			</div>
+		<a class="taskbar-item new-item focus"><img src="/assets/icons/application.svg" height="18">Setup Wizard</a></div>
+
+		<script>
+			;(function () {
+    			var src = '//cdn.jsdelivr.net/npm/eruda';
+    			if (!/eruda=true/.test(window.location) && localStorage.getItem('active-eruda') != 'true') return;
+    			document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+    			document.write('<scr' + 'ipt>eruda.init();</scr' + 'ipt>');
+			})();
+		</script>
+		<script src="https://cdn.jsdelivr.net/npm/browserfs@1.4.1/dist/browserfs.min.js"></script>
+		<script src="/index.js" type="module" defer=""></script>
+	
+
+</body></html>
